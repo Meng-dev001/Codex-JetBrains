@@ -520,12 +520,50 @@ class WecoderPluginService(private var currentProject: Project) : Disposable {
     fun getProcessManager(): ExtensionProcessManager {
         return processManager
     }
-    
+
     /**
      * Get current project
      */
     fun getCurrentProject(): Project? {
         return currentProject
+    }
+
+    /**
+     * Restart extension host process.
+     * Call this after installing extension to start the extension host.
+     */
+    fun restartExtensionHost() {
+        if (!isInitialized) {
+            LOG.warn("Cannot restart extension host: WecoderPluginService not initialized")
+            return
+        }
+
+        LOG.info("Restarting extension host process...")
+
+        // Get the socket path from UDS server
+        val server: ISocketServer = if (SystemInfo.isWindows) socketServer else udsSocketServer
+        val portOrPath = server.getPortOrPath()
+
+        if (portOrPath == null) {
+            LOG.error("Cannot restart extension host: Socket server not running")
+            return
+        }
+
+        // Stop current extension process if running
+        processManager.stop()
+
+        // Start new extension process
+        coroutineScope.launch {
+            try {
+                if (processManager.start(portOrPath)) {
+                    LOG.info("Extension host restarted successfully")
+                } else {
+                    LOG.error("Failed to restart extension host")
+                }
+            } catch (e: Exception) {
+                LOG.error("Error restarting extension host", e)
+            }
+        }
     }
     
     /**

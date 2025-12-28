@@ -68,6 +68,11 @@ class ExtensionUnixDomainSocketServer : ISocketServer {
         }
     }
 
+    // Get current socket path
+    override fun getPortOrPath(): String? {
+        return udsSocketPath?.toString()
+    }
+
     // Stop UDS server, release resources
     override fun stop() {
         if (!isRunning) return

@@ -1058,10 +1058,18 @@ class RunVSAgentToolWindowFactory : ToolWindowFactory {
                 // Initialize the current provider
                 extensionManager.initializeCurrentProvider()
                 
-                // Start plugin service
+                // Get plugin service and restart extension host
                 val pluginService = WecoderPlugin.getInstance(project)
-                pluginService.initialize(project)
-                
+                if (pluginService.isInitialized()) {
+                    // Service already initialized, just restart extension host
+                    logger.info("Plugin service already initialized, restarting extension host")
+                    pluginService.restartExtensionHost()
+                } else {
+                    // First time initialization
+                    logger.info("First time plugin service initialization")
+                    pluginService.initialize(project)
+                }
+
                 // Initialize WebViewManager
                 val webViewManager = project.getService(WebViewManager::class.java)
                 if (webViewManager != null) {

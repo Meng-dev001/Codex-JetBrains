@@ -21,6 +21,7 @@ interface ISocketServer : Disposable {
     fun start(projectPath: String = ""): Any?
     fun stop()
     fun isRunning(): Boolean
+    fun getPortOrPath(): Any?
 }
 
 class ExtensionSocketServer() : ISocketServer {
@@ -83,6 +84,13 @@ class ExtensionSocketServer() : ISocketServer {
         }
     }
     
+    /**
+     * Get current port
+     */
+    override fun getPortOrPath(): Int? {
+        return serverSocket?.localPort
+    }
+
     /**
      * Stop Socket server
      */
