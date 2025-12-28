@@ -43,7 +43,7 @@ object PluginConstants {
          * Get user home directory for configuration storage
          */
         fun getUserConfigDir(): String {
-            return System.getProperty("user.home") + "/.run-vs-agent"
+            return System.getProperty("user.home") + "/.cometix"
         }
         
         /**
